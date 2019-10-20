@@ -11,7 +11,7 @@
     "test": "jest"
   },
   "bin": {
-    "puppeteerPdfGenerator": "dist/index.js"
+    "puppeteer-pdf-generator": "dist/index.js"
   },
   "jest": {
     "rootDir": "src",
