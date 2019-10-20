@@ -1,0 +1,16 @@
+extends: tslint:recommended
+rulesDirectory:
+  - src
+rules:
+  max-line-length: false
+  # TODO: 下記のルールは検知される行数が多いので、後続で直していく
+  interface-name: false
+  no-unused-expression: false
+  object-literal-sort-keys: false
+  triple-equals: false
+  variable-name: false
+
+  # productionモードのwebpackでは自動的に削除されるため、開発環境でconsole.logは使って良いものとする
+  no-console: true
+jsRules:
+  max-line-length: false

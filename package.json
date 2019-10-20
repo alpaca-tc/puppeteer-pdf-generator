@@ -1,0 +1,50 @@
+{
+  "name": "puppeteer-pdf-generator",
+  "version": "1.0.0",
+  "main": "cli.js",
+  "repository": "https://github.com/alpaca-tc/puppeteer-pdf-generator",
+  "author": "alpaca-tc",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "tslint": "./node_modules/.bin/tslint --project .",
+    "test": "jest"
+  },
+  "bin": {
+    "puppeteerPdfGenerator": "dist/index.js"
+  },
+  "jest": {
+    "rootDir": "src",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/__tests__/*.+(ts|tsx|js|jsx)"
+    ]
+  },
+  "dependencies": {
+    "commander": "^3.0.2",
+    "lodash": "^4.17.15",
+    "puppeteer": "^1.20.0",
+    "tmp-promise": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "@types/node": "^12.11.1",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  }
+}
