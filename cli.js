@@ -1,3 +1,7 @@
 #!/usr/bin/env node
 
-require('./dist');
+const importLocal = require('import-local');
+
+if (!importLocal(__filename)) {
+  require('./dist');
+}
