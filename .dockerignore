@@ -1,0 +1,8 @@
+node_modules
+**/__tests__
+.circleci
+.git
+dist
+tslint.yaml
+README.md
+.node-version
