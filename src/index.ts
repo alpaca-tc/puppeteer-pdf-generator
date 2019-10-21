@@ -3,7 +3,7 @@ import pick from "lodash/pick";
 import createPdf from "./createPdf";
 import optionParser from "./optionParser";
 
-process.on('unhandledRejection', err => {
+process.on("unhandledRejection", (err) => {
   throw err;
 });
 

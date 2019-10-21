@@ -15,7 +15,7 @@ export default async (options: Options) => {
   } else if (options.url) {
     href = options.url;
   } else {
-    throw new TypeError('The "path" or "url" argument must be of type string.')
+    throw new TypeError('The "path" or "url" argument must be of type string.');
   }
 
   debug(href);
