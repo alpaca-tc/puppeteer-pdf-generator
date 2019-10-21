@@ -1,12 +1,13 @@
 {
   "name": "puppeteer-pdf-generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "cli.js",
   "repository": "https://github.com/alpaca-tc/puppeteer-pdf-generator",
   "author": "alpaca-tc",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
+    "release": "yarn run test && yarn run tslint && yarn run build && npm publish",
     "tslint": "./node_modules/.bin/tslint --project .",
     "test": "jest"
   },
@@ -42,7 +43,7 @@
     "https-proxy-agent": "^3.0.0",
     "import-local": "^3.0.2",
     "lodash": "^4.17.15",
-    "puppeteer": "^1.20.0",
+    "puppeteer": ">= 1.20.0",
     "tmp-promise": "^2.0.2"
   },
   "devDependencies": {
