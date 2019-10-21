@@ -12,13 +12,27 @@ export interface Options {
   userAgent: string;
 }
 
+export const formats = [
+  "Letter",
+  "Legal",
+  "Tabloid",
+  "Ledger",
+  "A0",
+  "A1",
+  "A2",
+  "A3",
+  "A4",
+  "A5",
+  "A6",
+];
+
 const debug = Debug("optionParser");
 
 commander
   .option("--out <path>", "output path")
   .option("--path <path>", "input html file")
   .option("--url <url>", "input url")
-  .option("--format <format>", '"Letter", "Legal", "Tabloid", "Ledger", "A0", "A1", "A2", "A3", "A4", "A5", "A6"')
+  .option("--format <format>", formats.toString())
   .option("--user-agent <string>", "user agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3312.0 Safari/537.36")
   .option("--timeout <number>", "time out ms", 30000)
   .option("--wait-for <number>", "wait for ms", 250)
