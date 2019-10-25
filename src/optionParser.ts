@@ -37,7 +37,7 @@ commander
   .option("--user-agent <string>", "user agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3312.0 Safari/537.36")
   .option("--timeout <number>", "time out ms", 30000)
   .option("--wait-for <number>", "wait for ms", 250)
-  .option("--landscape <boolean>", "landscape pdf file", false)
+  .option("--landscape", "landscape pdf file", false)
   .usage("--path index.html --out index.pdf");
 
 export default (argv): Options => {
