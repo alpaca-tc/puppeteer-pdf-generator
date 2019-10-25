@@ -51,6 +51,6 @@ export default (argv): Options => {
     timeout: commander.timeout,
     waitFor: commander.waitFor,
     userAgent: commander.userAgent,
-    landscape: commander.landscape
+    landscape: commander.landscape,
   } as Options;
 };
