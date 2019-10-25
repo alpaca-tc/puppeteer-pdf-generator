@@ -46,6 +46,7 @@ export default async (options: Options) => {
     // https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pagepdfoptions
     const pdf = await page.pdf({
       format: options.format,
+      landscape: options.landscape,
       margin: { top: 0, right: 0, bottom: 0, left: 0 },
       printBackground: true,
     });

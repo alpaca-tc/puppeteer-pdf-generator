@@ -10,6 +10,7 @@ export interface Options {
   timeout: number;
   waitFor: number;
   userAgent: string;
+  landscape: boolean;
 }
 
 export const formats = [
@@ -36,6 +37,7 @@ commander
   .option("--user-agent <string>", "user agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3312.0 Safari/537.36")
   .option("--timeout <number>", "time out ms", 30000)
   .option("--wait-for <number>", "wait for ms", 250)
+  .option("--landscape", "landscape pdf file", false)
   .usage("--path index.html --out index.pdf");
 
 export default (argv): Options => {
@@ -49,5 +51,6 @@ export default (argv): Options => {
     timeout: commander.timeout,
     waitFor: commander.waitFor,
     userAgent: commander.userAgent,
+    landscape: commander.landscape
   } as Options;
 };
