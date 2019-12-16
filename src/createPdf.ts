@@ -32,6 +32,7 @@ export default async (options: Options) => {
           "--no-sandbox",
           "--disable-setuid-sandbox",
           "--disable-gpu",
+          "--disable-dev-shm-usage",
           `--user-agent="${options.userAgent}"`,
         ],
       },
