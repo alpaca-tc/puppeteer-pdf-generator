@@ -48,7 +48,7 @@ export default async (options: Options) => {
     const pdf = await page.pdf({
       format: options.format,
       landscape: options.landscape,
-      margin: { top: 0, right: 0, bottom: 0, left: 0 },
+      margin: { top: options.marginTop, right: options.marginRight, bottom: options.marginBottom, left: options.marginLeft },
       printBackground: true,
     });
 
