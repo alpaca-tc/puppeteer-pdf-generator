@@ -11,6 +11,10 @@ export interface Options {
   waitFor: number;
   userAgent: string;
   landscape: boolean;
+  marginTop: number;
+  marginRight: number;
+  marginBottom: number;
+  marginLeft: number;
 }
 
 export const formats = [
@@ -38,6 +42,10 @@ commander
   .option("--timeout <number>", "time out ms", 30000)
   .option("--wait-for <number>", "wait for ms", 250)
   .option("--landscape", "landscape pdf file", false)
+  .option("--margin-top", "margin top size", 0)
+  .option("--margin-right", "margin right size", 0)
+  .option("--margin-bottom", "margin bottom size", 0)
+  .option("--margin-left", "margin left size", 0)
   .usage("--path index.html --out index.pdf");
 
 export default (argv): Options => {
