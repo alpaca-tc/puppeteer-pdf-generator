@@ -42,23 +42,27 @@ commander
   .option("--timeout <number>", "time out ms", 30000)
   .option("--wait-for <number>", "wait for ms", 250)
   .option("--landscape", "landscape pdf file", false)
-  .option("--margin-top", "margin top size", 0)
-  .option("--margin-right", "margin right size", 0)
-  .option("--margin-bottom", "margin bottom size", 0)
-  .option("--margin-left", "margin left size", 0)
+  .option("--margin-top <number>", "margin top size", 0)
+  .option("--margin-right <number>", "margin right size", 0)
+  .option("--margin-bottom <number>", "margin bottom size", 0)
+  .option("--margin-left <number>", "margin left size", 0)
   .usage("--path index.html --out index.pdf");
 
 export default (argv): Options => {
   commander.parse(argv);
 
   return {
-    out: commander.out,
-    url: commander.url,
-    format: commander.format,
-    path: commander.path,
-    timeout: commander.timeout,
-    waitFor: commander.waitFor,
-    userAgent: commander.userAgent,
-    landscape: commander.landscape,
+    out: commander.default.out,
+    url: commander.default.url,
+    format: commander.default.format,
+    path: commander.default.path,
+    timeout: commander.default.timeout,
+    waitFor: commander.default.waitFor,
+    userAgent: commander.default.userAgent,
+    landscape: commander.default.landscape,
+    marginTop: commander.default.marginTop,
+    marginRight: commander.default.marginRight,
+    marginBottom: commander.default.marginBottom,
+    marginLeft: commander.default.marginLeft
   } as Options;
 };
