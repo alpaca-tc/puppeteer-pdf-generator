@@ -63,6 +63,6 @@ export default (argv): Options => {
     marginTop: commander.default.marginTop,
     marginRight: commander.default.marginRight,
     marginBottom: commander.default.marginBottom,
-    marginLeft: commander.default.marginLeft
+    marginLeft: commander.default.marginLeft,
   } as Options;
 };
