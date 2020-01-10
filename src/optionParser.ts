@@ -52,17 +52,17 @@ export default (argv): Options => {
   commander.parse(argv);
 
   return {
-    out: commander.default.out,
-    url: commander.default.url,
-    format: commander.default.format,
-    path: commander.default.path,
-    timeout: commander.default.timeout,
-    waitFor: commander.default.waitFor,
-    userAgent: commander.default.userAgent,
-    landscape: commander.default.landscape,
-    marginTop: commander.default.marginTop,
-    marginRight: commander.default.marginRight,
-    marginBottom: commander.default.marginBottom,
-    marginLeft: commander.default.marginLeft,
+    out: commander.out,
+    url: commander.url,
+    format: commander.format,
+    path: commander.path,
+    timeout: commander.timeout,
+    waitFor: commander.waitFor,
+    userAgent: commander.userAgent,
+    landscape: commander.landscape,
+    marginTop: commander.marginTop,
+    marginRight: commander.marginRight,
+    marginBottom: commander.marginBottom,
+    marginLeft: commander.marginLeft,
   } as Options;
 };
