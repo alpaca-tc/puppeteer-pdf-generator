@@ -49,6 +49,8 @@ export default async (options: Options) => {
       format: options.format,
       landscape: options.landscape,
       margin: { top: options.marginTop, right: options.marginRight, bottom: options.marginBottom, left: options.marginLeft },
+      width: options.width,
+      height: options.height,
       printBackground: true,
     });
 

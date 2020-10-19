@@ -15,6 +15,8 @@ export interface Options {
   marginRight: number;
   marginBottom: number;
   marginLeft: number;
+  width: number,
+  height: number
 }
 
 export const formats = [
@@ -46,6 +48,8 @@ commander
   .option("--margin-right <number>", "margin right size", 0)
   .option("--margin-bottom <number>", "margin bottom size", 0)
   .option("--margin-left <number>", "margin left size", 0)
+  .option("--width <number>", "width size", 0)
+  .option("--height <number>", "height size", 0)
   .usage("--path index.html --out index.pdf");
 
 export default (argv): Options => {
@@ -64,5 +68,7 @@ export default (argv): Options => {
     marginRight: commander.marginRight,
     marginBottom: commander.marginBottom,
     marginLeft: commander.marginLeft,
+    width: commander.width,
+    height: commander.height,
   } as Options;
 };
