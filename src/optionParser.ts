@@ -15,8 +15,8 @@ export interface Options {
   marginRight: number;
   marginBottom: number;
   marginLeft: number;
-  width: number,
-  height: number
+  width: number;
+  height: number;
 }
 
 export const formats = [
