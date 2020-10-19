@@ -1,6 +1,6 @@
 {
   "name": "puppeteer-pdf-generator",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "main": "cli.js",
   "repository": "https://github.com/alpaca-tc/puppeteer-pdf-generator",
   "author": "alpaca-tc",
