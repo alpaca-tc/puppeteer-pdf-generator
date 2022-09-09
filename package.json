@@ -42,7 +42,7 @@
     "commander": "^3.0.2",
     "https-proxy-agent": "^3.0.0",
     "import-local": "^3.0.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "puppeteer": "^14.1.1",
     "tmp-promise": "^2.0.2"
   },
